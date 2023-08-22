@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  filebrowser:
+    image: pudding/docker-app-filebrowse-20230822-1557
+    ports:
+      - 7681:8080
+    volumes:
+      - /home/pudding/AppImages/:/data

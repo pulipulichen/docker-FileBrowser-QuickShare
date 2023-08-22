@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  filebrowser:
+    #image: hurlenko/filebrowser:v2.23.0
+    build: .
+    #user: "${UID}:${GID}"
+    ports:
+      - 7681:8080
+    volumes:
+      - /mnt/SSD2T/ext4/Docker-Projects/stable-diffusion-webui-docker/output/txt2img/2023-04-23/:/data
+    #   - ./extras:/data/extras
+    #   - ./img2img:/data/img2img
+    #   - ./txt2img:/data/txt2img
+    #   #- ./private-video:/data/private-video
+    #   - ./filebrowser:/config
+    #   #- ./startup.sh:/startup.sh
+    # environment:
+    #   - FB_BASEURL=/filebrowser
+    #restart: always

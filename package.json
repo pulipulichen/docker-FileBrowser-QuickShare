@@ -1,0 +1,29 @@
+{
+  "name": "docker-FileBrowser-QuickShare",
+  "version": "1.0.0",
+  "description": "Customized FileBrowser",
+  "main": "index.js",
+  "scripts": {
+    "docker-compose-start": "docker-compose up --build",
+    "up": "docker-compose up",
+    "build-up": "docker-compose up --build",
+    "build": "docker-compose build",
+    "bash": "docker-compose run app bash"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pulipuli.chen@gmail.com@github.com/pulipulichen/docker-FileBrowser-QuickShare.git"
+  },
+  "keywords": [
+    "GitHub Action"
+  ],
+  "author": "Pulipuli Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pulipulichen/docker-FileBrowser-QuickShare/issues"
+  },
+  "homepage": "https://github.com/pulipulichen/docker-FileBrowser-QuickShare#readme",
+  "dependencies": {
+    "gtts": "0.2.1"
+  }
+}
